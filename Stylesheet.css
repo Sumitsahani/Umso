@@ -1,0 +1,219 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+   /* padding-right: 1rem;
+   padding-left: 5rem; */
+    background-color:black;
+    
+}
+
+nav img {
+    width: 8rem;
+
+}
+
+nav .right a {
+    text-decoration: none;
+    color: white;
+    margin-left: 1.5rem;
+}
+
+nav button {
+    margin-left: 1.5rem;
+    padding: 0.5rem 1rem;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.hamburger {
+    display: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.mobile-menu a,
+.mobile-menu button {
+    margin: 1rem 0;
+    color: white;
+}
+
+.close-menu {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    nav .right {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+.main {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+ .main h1 {
+    font-size: 4.5rem;
+    margin: 0.5rem 0;
+}
+
+.main p {
+    margin: 1rem 0;
+    color:#ced4da;
+    font-size: 1.5rem;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6rem;
+    background-color: black;
+    padding: .5rem;
+    width: 35rem;
+    height: 3rem;
+    margin-left: 5rem;
+    border-radius: 1rem;
+    border: 2px solid blueviolet;
+}
+
+input[type="text"] {
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    width: 300px;
+    border: none;
+    text-align: left;
+    background-color: black;
+}
+
+.main button {
+    padding: 0.5rem 1rem;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 0.25rem;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    border-radius: 1rem;
+}
+
+.main button i {
+    margin-left: 0.5rem;
+}
+
+.main button:hover {
+    background-color:blue;
+}
+
+
+/* 
+------------------------------------------------main-2---------------------------------------------------------- */
+
+.main {
+    text-align: center;
+    padding: 20px;
+}
+
+.input-container {
+    margin-left: 5.5rem;
+}
+
+.input-container input {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.input-container button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.main-2 {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-left: 9rem;
+    margin-top: 3rem;
+    font-size: small;
+}
+
+.main-2 i {
+    font-size: small;
+}
+
+@media (max-width: 768px) {
+    .main-2 {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 0;
+        font-size: x-small;
+    }
+
+    .input-container input,
+    .input-container button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main h1 {
+        font-size: 24px;
+    }
+
+    .input-container input,
+    .input-container button {
+        font-size: 12px;
+    }
+
+    .main-2 {
+        font-size: xx-small;
+    }
+}
